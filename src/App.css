@@ -25,6 +25,14 @@
       font-size: 35px;
     }
   }
+  .container {
+    border: solid white 3px;
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   .input {
     display: flex;
     width: 90%;
@@ -43,32 +51,31 @@
   }
   .list {
     display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    flex-wrap: wrap;
+    width: 47%;
+    flex-direction: column;
+    padding: 15px;
     border: solid 3px grey;
   }
   .single-todo{
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    /* width: 30%; */
     border: solid black 3px;
     padding: 20px;
     margin-top: 10px;
     background: linear-gradient(red, blue);
   }
   .todo-item-text {
-    
+
   }
   .react-icons{
     margin-left: 10px;
     font-size: 25px;
     cursor: pointer;
-    border: solid white 2px;
   }
-  @media (max-width: 1200px){
-    .single-todo{
-      width: 40%;
+  @media (max-width: 1100px){
+    .list {
+      width: 45%;
     }
   }
   @media (max-width: 700px){
@@ -77,8 +84,13 @@
     }
     .list {
       width: 95%;
+      margin-bottom: 10px;
     }
-    .single-todo{
-      width: 100%;
+    .container {
+      width: 95%;
+      flex-direction: column;
     }
+  }
+  .remove {
+    background-color: red;
   }

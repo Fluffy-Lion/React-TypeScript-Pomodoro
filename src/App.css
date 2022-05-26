@@ -41,3 +41,44 @@
     width: 50px;
     right: 0px;
   }
+  .list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+    border: solid 3px grey;
+  }
+  .single-todo{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    border: solid black 3px;
+    padding: 20px;
+    margin-top: 10px;
+    background: linear-gradient(red, blue);
+  }
+  .todo-item-text {
+    
+  }
+  .react-icons{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border: solid white 2px;
+  }
+  @media (max-width: 1200px){
+    .single-todo{
+      width: 40%;
+    }
+  }
+  @media (max-width: 700px){
+    .input {
+      width: 95%;
+    }
+    .list {
+      width: 95%;
+    }
+    .single-todo{
+      width: 100%;
+    }
+  }

@@ -1,96 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
 
 .App {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2f74c0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
-  
-  .heading {
-    text-transform: uppercase;
-    font-size: 40px;
-    margin: 30px 0;
-    color: white;
-    z-index: 1;
-    text-align: center;
-  }
-  
-  @media (max-width: 800px) {
-    .heading {
-      margin: 15px 0;
-      font-size: 35px;
-    }
-  }
-  .container {
-    border: solid white 3px;
-    display: flex;
-    width: 95%;
-    margin-top: 10px;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .input {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    /* relative because we will make the button absolute */
-    position: relative;
-  }
-  .input-element{
-    width: 100%;
-  }
-  .input-button{
-    /* position it inside parent */
-    position: absolute;
-    width: 50px;
-    right: 0px;
-  }
-  .list {
-    display: flex;
-    width: 47%;
-    flex-direction: column;
-    padding: 15px;
-    border: solid 3px grey;
-  }
-  .single-todo{
-    display: flex;
-    justify-content: space-between;
-    /* width: 30%; */
-    border: solid black 3px;
-    padding: 20px;
-    margin-top: 10px;
-    background: linear-gradient(red, blue);
-  }
-  .todo-item-text {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f74c0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
   }
-  .react-icons{
-    margin-left: 10px;
-    font-size: 25px;
-    cursor: pointer;
+}
+
+.container {
+  border: solid white 3px;
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.input {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  /* relative because we will make the button absolute */
+  position: relative;
+}
+
+.input-element {
+  width: 100%;
+}
+
+.input-button {
+  /* position it inside parent */
+  position: absolute;
+  width: 50px;
+  right: 0px;
+}
+
+.list {
+  display: flex;
+  width: 47%;
+  flex-direction: column;
+  padding: 15px;
+  border: solid 3px grey;
+}
+
+.single-todo {
+  display: flex;
+  justify-content: space-between;
+  /* width: 30%; */
+  border: solid black 3px;
+  padding: 20px;
+  margin-top: 10px;
+  background: linear-gradient(red, blue);
+}
+
+.todo-item-text {}
+
+.react-icons {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .list {
+    width: 45%;
   }
-  @media (max-width: 1100px){
-    .list {
-      width: 45%;
-    }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
   }
-  @media (max-width: 700px){
-    .input {
-      width: 95%;
-    }
-    .list {
-      width: 95%;
-      margin-bottom: 10px;
-    }
-    .container {
-      width: 95%;
-      flex-direction: column;
-    }
+
+  .list {
+    width: 95%;
+    margin-bottom: 10px;
   }
-  .remove {
-    background-color: red;
+
+  .container {
+    width: 95%;
+    flex-direction: column;
   }
+}
+
+.remove {
+  background-color: red;
+}

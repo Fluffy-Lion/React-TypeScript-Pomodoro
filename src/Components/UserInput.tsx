@@ -16,7 +16,7 @@ const UserInput = ({ todo, setTodo, handleAdd }: Props): JSX.Element => {
             inputRef.current?.blur()
         }} className='input'>
             <input
-            ref={inputRef}
+                ref={inputRef}
                 type="input"
                 placeholder="enter task"
                 className='input-element'

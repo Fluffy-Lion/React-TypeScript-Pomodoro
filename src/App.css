@@ -25,3 +25,19 @@
       font-size: 35px;
     }
   }
+  .input {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    /* relative because we will make the button absolute */
+    position: relative;
+  }
+  .input-element{
+    width: 100%;
+  }
+  .input-button{
+    /* position it inside parent */
+    position: absolute;
+    width: 50px;
+    right: 0px;
+  }
